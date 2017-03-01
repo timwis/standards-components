@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Custom elements demo</title>
+    <link href="https://cityofphiladelphia.github.io/standards/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="row">
+      <div class="columns">
+
+        <div class="row">
+          <div class="columns medium-9">
+            <phl-button href="foo" icon="fa-bullhorn" class="full-width">
+              Default with icon
+            </phl-button>
+          </div>
+          <div class="columns medium-6">
+            <phl-button href="foo" class="full-width">
+              No icon
+            </phl-button>
+          </div>
+          <div class="columns medium-6 end mts">
+            <phl-button href="foo" class="see-all-right">
+              See all »
+            </phl-button>
+          </div>
+        </div>
+
+        <phl-service-update level="critical" label="trash" icon="fa-trash">
+          <span>Trash and recycling collection is suspended due to weather. Hold trash until next Thursday. <a href="http://www.philadelphiastreets.com/" class="external">Visit Philadelphia Streets for more information.</a></span>
+          <span class="date small-text"><em>In Effect: Tuesday, Feb. 21 </em></span>
+        </phl-service-update>
+
+        <phl-service-update level="warning" label="transit" icon="fa-subway">
+          <span>The Market-Frankford SEPTA line is operating on a modified schedule today. <a href="http://www.philadelphiastreets.com/" class="external">Learn more about the schedule from SEPTA.</a></span>
+        </phl-service-update>
+
+        <phl-service-update label="city" icon="fa-institution">
+          <span>All City buildings are open for their regular business hours.</span>
+        </phl-service-update>
+
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
