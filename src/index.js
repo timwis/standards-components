@@ -1,5 +1,8 @@
-const PHLButton = require('./components/button')
-const PHLServiceUpdate = require('./components/service-update')
+activate('phl-button', require('./components/button'))
+activate('phl-service-update', require('./components/service-update'))
 
-window.customElements.define('phl-button', PHLButton)
-window.customElements.define('phl-service-update', PHLServiceUpdate)
+function activate (query, fn) {
+  const elsNodeList = document.querySelectorAll(query)
+  const elsArray = [].slice.call(elsNodeList)
+  elsArray.forEach(fn)
+}
